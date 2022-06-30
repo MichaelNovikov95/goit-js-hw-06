@@ -38,4 +38,4 @@ const imgRefs = images.map(({ url, alt }) => {
   imgsRef.forEach(img => {
     img.style.width = '100%';
     img.style.height = '100%';
-  })
+  });
