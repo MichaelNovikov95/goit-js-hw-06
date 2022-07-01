@@ -17,10 +17,12 @@ const checkedLength = function () {
   const passLength = inputField.value.length;
   const classRef = inputField.classList;
 
-  if (passLength >= Number(inputField.dataset.length)) {
-    classRef.replace('invalid','valid');
+  if (passLength === Number(inputField.dataset.length)) {
+    classRef.remove('invalid');
+    classRef.add('valid');
     return;
   } else {
+    classRef.remove('valid');
     classRef.add('invalid');
   return;
   }
