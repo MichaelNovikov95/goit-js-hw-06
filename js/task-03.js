@@ -28,14 +28,12 @@ const imgRefs = images.map(({ url, alt }) => {
   const liRef = [...galleryRef.children];
 
   liRef.forEach(li => {
+    const imgRef = li.querySelector('.img').style;
+    
     li.style.listStyleType = 'none';
     li.style.width ='calc((100% - 90px) / 3)';
     li.style.margin = '15px';
-  });
 
-  const imgsRef = document.querySelectorAll('.img');
-
-  imgsRef.forEach(img => {
-    img.style.width = '100%';
-    img.style.height = '100%';
+    imgRef.width = '100%';
+    imgRef.height = '100%';
   });

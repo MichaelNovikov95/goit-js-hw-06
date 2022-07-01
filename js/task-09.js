@@ -7,8 +7,9 @@ const textColorRef = document.querySelector('.color');
 const backgorundRef = document.querySelector('.widget');
 
 function buttonChangeColorHandler () {
-  backgorundRef.style.backgroundColor = getRandomHexColor();
-  textColorRef.textContent = getRandomHexColor();
+  const colorSwitch = getRandomHexColor();
+  backgorundRef.style.backgroundColor = colorSwitch;
+  textColorRef.textContent = colorSwitch;
 }
 
 btnRef.addEventListener('click', buttonChangeColorHandler);

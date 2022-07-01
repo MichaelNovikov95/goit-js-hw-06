@@ -16,7 +16,7 @@ function createBoxes(amount) {
 amount = inputRef.value;
 
 for (let i = 1; i <= inputRef.value; i+= 1) {
-  let startLength = 30 + i * 10;
+  let startLength = 20 + i * 10;
   const divCreate = document.createElement('div');
   divCreate.style.width = `${startLength}px`;
   divCreate.style.height = `${startLength}px`;
